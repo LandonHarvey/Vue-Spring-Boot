@@ -1,1 +1,4 @@
+com/codeup/weekndr/controllers/UserController.class
+com/codeup/weekndr/models/User.class
 com/codeup/weekndr/WeekndrApplication.class
+com/codeup/weekndr/repositories/UserRepository.class
