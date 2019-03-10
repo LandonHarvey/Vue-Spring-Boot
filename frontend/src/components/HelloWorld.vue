@@ -41,6 +41,7 @@
 
 <script>
 import axios from 'axios'
+import Store from 'store'
 export default {
   name: 'HelloWorld',
   props: {
@@ -76,6 +77,7 @@ export default {
         .get('/userlist.json')
         .then(res => {
           this.info = res.data
+          this.store.state.usersList = res.data
           console.log(this.info)
         }).catch(err => {
           console.log(err)

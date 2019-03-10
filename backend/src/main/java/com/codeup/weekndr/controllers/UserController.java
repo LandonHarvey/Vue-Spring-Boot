@@ -4,10 +4,7 @@ package com.codeup.weekndr.controllers;
 import com.codeup.weekndr.models.User;
 import com.codeup.weekndr.repositories.UserRepository;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
