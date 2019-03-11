@@ -16,7 +16,7 @@ using a MySQL backend for data storage. there will be no testing involved in the
 I will not be going over deployment to desired platforms. I personally use this repo to help with deployment * [cods](https://github.com/zgulde/cods) visit if you are wanting to deploy.
 
 
-###Prerequisites
+##Prerequisites
 
 You want to make sure you have an updated version of Node when going through this process as well as Vue-Cli.
 Vue-Cli requires Node version 8.9 or above ([Vue-Cli](https://cli.vuejs.org/guide/installation.html))
@@ -51,7 +51,7 @@ Run the following commands based on your operating system.
     npm install -g @vue/cli
 ```
 
-###Project Structure
+##Project Structure
 
 ```
 spring-boot-vuejs
@@ -64,7 +64,7 @@ spring-boot-vuejs
 └── pom.xml     → Maven parent pom managing both modules
 ```
 
-###Backend
+##Backend
 
 Using Intellij create a spring initializr select `Web`
 If you are not using Intellij use * [springInitializr](https://start.spring.io/) and initialize a Spring Boot app with `Web`. Place the zip’s contents in the backend folder.
@@ -150,7 +150,7 @@ Notice mysql-connector for using a mysql database.
     </build>
 </project>
 ```
-###Front End
+##Front End
 
 Creating our `frontend` project is done with the `--no-git`, because our parent already has a git repo created and vue CLI will create a git repo if we do not specify no git then errors will occur.
 
@@ -247,7 +247,7 @@ We will create `vue.config.js` file and configure the `outputDir` and `assetsDir
     }
 ```
 
-###Parent Pom
+##Parent Pom
 
 Set up your parent pom to allow for a moduler `pom` structure.
 
@@ -292,7 +292,7 @@ This will allow for 3 `pom` files to be present and the parent to utilzing the `
 </project>
 ```
 
-###Run Application 
+##Run Application 
 
 Make sure to input values into your `application.properties` file in your backend `resources` folder if you are using MySql
 
@@ -320,7 +320,7 @@ mvn --projects backend spring-boot:run
 Now go to your specified `localhost`
 
 
-###Front End Development
+##Front End Development
 
 If you are just wanting to see your front end effects without having to rerun the app every time use, 
 
@@ -331,11 +331,11 @@ npm run serve
 REMEMBER ONLY FRONT END WILL BE UTILIZED YOU WILL NOT BE COMMUNICATING WITH YOUR DB OR BACKEND.
  
 
-### Authors
+##Authors
 
 * **Landon Harvey** 
 
-### Acknowledgments
+##Acknowledgments
 
 Where I first learned and for a more comprehensive guide check out `jonashackt` github
 * [jonashackt](https://github.com/jonashackt/spring-boot-vuejs#in-search-of-a-new-web-frontend-framework-after-2-years-of-absence)
